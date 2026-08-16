@@ -12,10 +12,10 @@
         <h1> SkillForge</h1>
         
         <nav>   
-        <a href="index.html">Home|</a>
-        <a href="cursos.html">Cursos|</a>
-        <a href="sobre.html">Sobre|</a>
-        <a href="contato.html">Contato|</a>
+        <a href="index.html">Home</a> |
+        <a href="cursos.html">Cursos</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="contato.html">Contato</a> |
         <a href="login.html">Login</a>
 
         </nav>
@@ -25,35 +25,51 @@
 
         <main>
             <h2>Entre em Contato</h2>
-
+            <form>
            <label for="nome">Nome</label>
            <input type="text" name="nome" id="nome"><br>
            <label for="email">E-mail</label>
            <input type="email" name="email" id="email"><br>
            <label for="telefone">Telefone</label>
            <input type="tel" name="telefone" id="telefone">
-        </main>
 
-        <h3>Assunto</h3>
+             <h3>Assunto</h3>
 
-        <input type="radio">Masculino
-        <input type="radio">Feminino
+        <select name="assunto" id="assunto">
+            
+            <option value="duvida">Dúvida</option>
+            <option value="suporte">Suporte</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="outro">Outro</option>
+        </select>
 
-        <h3>Mensagem:</h3>
 
-     <textarea>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" >
 
      </textarea>
 
      <br><br>
 
-     <input type="checkbox"> Aceito receber novidades da SkillForge
+     <label>
+     <input type="checkbox"> 
+     Aceito receber novidades da SkillForge
+     </label>
 
      <br><br>
     <button type="submit">Enviar Mensagem</button>
+           
+        </form>
+
+
+     
+
+      
+
+        
      <hr>
 
-     </main>
+    </main>
 
       <footer>
         <p>©2026 SkillForge. Todos os direitos reservados.</p>
