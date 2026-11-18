@@ -3,44 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso</title>
+    <title>Detalhes do Curso | SkillForge</title>
+        <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
 
     <header>
         <h1>SkillForge</h1>
 
-        <nav>   
-           <a href="index.html">Home</a> |
-        <a href="cursos.html">Cursos</a> |
-        <a href="sobre.html">Sobre</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="perfil.html">Perfil</a> |
-        <a href="fag.html">fag</a> |
+        <nav class="menu">   
+           <a href="index.html">Home</a> 
+        <a href="cursos.html">Cursos</a> 
+        <a href="sobre.html">Sobre</a> 
+        <a href="contato.html">Contato</a> 
+        <a href="perfil.html">Perfil</a> 
+        <a href="fag.html">fag</a> 
         <a href="login.html">Login</a>
         </nav>
     </header>
 
-    <main>
+    <main class="pagina-curso">
         
         <hr>
 
-        <section>
+        <section class="curso-destaque">
+           
             <h2>Curso de HTML</h2>
 
             <img src="/img/html-5.png" alt="Curso de Html" width="100" height="100">
             
             <p>Aprenda Html do zero e desenvolva páginas web profissionais.</p> 
 
+            <a href="#conteudo" class="botao">Começar a aprender</a>
+
+            </section>
+
+            <section class="informacoes-curso">
+
+            <h2>Informações do Curso</h2>
+
             <p>Professor: João Pedro</p>
             <p>Carga Horária: 20 horas</p>
             <p>Nível: Iniciante</p>
+            
 
+             </section>
+
+           
             <hr>
             
-        </section>
+        
 
-        <section>
+        <section class="objetivos-curso">
           
             <h2>O que você vai aprender?</h2>
 
@@ -57,31 +71,57 @@
             
         </section>
 
-        <section>
+        <section class="conteudo-curso" id="conteudo">
 
-           <h2>Conteúdo do Curso</h2>
-           
-            <ol>
-                <li>Introdução ao HTML</li>
-                <li>Estrutura de uma página </li>
-                <li>Textos e Titulos</li>
-                <li>Links e Imagens</li>
-                <li>Listas</li>
-                <li>Formularios</li>
-            </ol>
-            <hr>
-         </section>   
-        
-         <a href="cursos.html">Começar Curso</a>
+          
+            <h2>Conteúdo Programático</h2>
 
-        </main>
+            <article class="aula">
+                <h3>Módulo 1 - Introdução ao HTML</h3>
+                <p>Aula 1: O que é HTML?</p>
+                <p>Aula 2: Estrutura básica de uma página.</p>
+                <p>Aula 3: Tags e elementos.</p>
+            </article>
 
-       
+            <article class="aula">
+                <h3>Módulo 2 - Elementos HTML</h3>
+                <p>Aula 4: Títulos e parágrafos.</p>
+                <p>Aula 5: Links e imagens.</p>
+                <p>Aula 6: Listas e tabelas.</p>
+            </article>
 
-        <footer>
-            <p>©2026 SkillForge. Todos os direitos reservados.</p>
-        </footer>
-        
-        
+            <article class="aula">
+                <h3>Módulo 3 - Formulários</h3>
+                <p>Aula 7: Criando formulários.</p>
+                <p>Aula 8: Campos e botões.</p>
+            </article>
+
+            <article class="aula">
+                <h3>Módulo 4 - HTML5</h3>
+                <p>Aula 9: Elementos semânticos.</p>
+                <p>Aula 10: Projeto prático final.</p>
+            </article>
+
+        </section>
+
+        <section class="final-curso">
+
+            <h2>Pronto para começar?</h2>
+
+            <p>
+                Desenvolva suas habilidades e comece sua jornada
+                no desenvolvimento web com a SkillForge.
+            </p>
+
+            <a href="login.html" class="botao">Acessar plataforma</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©2026 SkillForge. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>

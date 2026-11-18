@@ -212,4 +212,202 @@ footer p {
 
 
 
+/* ===== PÁGINA DE CURSOS ===== */
+
+.pagina-cursos {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.pagina-cursos h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+/* Organização dos cursos */
+
+.lista-cursos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Cards dos cursos */
+
+.card-curso {
+    background-color: white;
+    width: 45%;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+
+.card-curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Título dos cards */
+
+.card-curso h3 {
+    color: #2563eb;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+/* Imagens dos cursos */
+
+.card-curso img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Textos dos cards */
+
+.card-curso p {
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Botões dos cursos */
+
+.card-curso .botao {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Adaptação para telas menores */
+
+@media (max-width: 700px) {
+
+    .card-curso {
+        width: 100%;
+    }
+
+    .pagina-cursos {
+        width: 95%;
+    }
+
+}
+
+/* ===== PÁGINA INDIVIDUAL DO CURSO ===== */
+
+.pagina-curso {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* Apresentação */
+
+.curso-destaque {
+    background-color: white;
+    padding: 45px 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.curso-destaque h2 {
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.curso-destaque p {
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+/* Informações e objetivos */
+
+.informacoes-curso,
+.objetivos-curso,
+.conteudo-curso,
+.final-curso {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.informacoes-curso p {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.objetivos-curso ul {
+    text-align: left;
+    line-height: 2;
+    list-style: disc;
+}
+
+/* Módulos e aulas */
+
+.aula {
+    background-color: #f4f6f8;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+}
+
+.aula h3 {
+    color: #2563eb;
+}
+
+.aula p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Final */
+
+.final-curso {
+    text-align: center;
+}
+
+.final-curso p {
+    line-height: 1.7;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    .pagina-curso {
+        width: 95%;
+    }
+
+    .curso-destaque {
+        padding: 30px 15px;
+    }
+
+    .informacoes-curso,
+    .objetivos-curso,
+    .conteudo-curso,
+    .final-curso {
+        padding: 20px;
+    }
+
+}
+
+
+
 
