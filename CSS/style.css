@@ -408,6 +408,310 @@ footer p {
 
 }
 
+/* ===== PÁGINA SOBRE ===== */
+
+.pagina-sobre {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.sobre-destaque,
+.historia,
+.missao,
+.visao,
+.valores,
+.diferenciais,
+.sobre-final {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.sobre-destaque {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.sobre-destaque p,
+.historia p,
+.missao p,
+.visao p,
+.diferenciais p,
+.sobre-final p {
+    line-height: 1.8;
+}
+
+.sobre-destaque h2 {
+    color: #2563eb;
+    font-size: 32px;
+}
+
+/* Missão e visão */
+
+.missao-visao {
+    display: flex;
+    gap: 25px;
+}
+
+.missao,
+.visao {
+    flex: 1;
+}
+
+/* Valores */
+
+.valores ul {
+    line-height: 2;
+}
+
+/* Diferenciais */
+
+/* ===== DIFERENCIAIS ===== */
+
+.diferenciais {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.diferenciais h2 {
+    color: #1f2937;
+    margin-bottom: 25px;
+}
+
+.diferenciais article {
+    width: 80%;
+    background-color: #f4f6f8;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.diferenciais article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+.diferenciais h3 {
+    color: #2563eb;
+}
+
+.diferenciais p {
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Final */
+
+.sobre-final {
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+
+    .pagina-sobre {
+        width: 95%;
+    }
+
+    .missao-visao {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sobre-destaque,
+    .historia,
+    .missao,
+    .visao,
+    .valores,
+    .diferenciais,
+    .sobre-final {
+        padding: 22px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .diferenciais {
+        padding: 22px;
+    }
+
+    .diferenciais article {
+        width: 100%;
+    }
+
+}
+
+/* ===== PÁGINA DE CONTATO ===== */
+
+.pagina-contato {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.contato-destaque {
+    text-align: center;
+    background-color: white;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.contato-destaque h2 {
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.contato-destaque p {
+    line-height: 1.8;
+}
+
+/* Layout do formulário e informações */
+
+.contato-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Formulário */
+
+.form-contato {
+    flex: 2;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-contato h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-contato label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato select,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.form-contato textarea {
+    resize: vertical;
+}
+
+.form-contato input:focus,
+.form-contato select:focus,
+.form-contato textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Checkbox */
+
+.form-contato .newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+}
+
+.form-contato .newsletter input {
+    width: auto;
+}
+
+/* Botão */
+
+.form-contato button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.form-contato button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Informações de contato */
+
+.informacoes-contato {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.informacoes-contato h2 {
+    color: #2563eb;
+}
+
+.informacoes-contato p {
+    text-align: left;
+    line-height: 1.8;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .form-contato,
+    .informacoes-contato {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .pagina-contato {
+        width: 95%;
+    }
+
+}
+
 
 
 
