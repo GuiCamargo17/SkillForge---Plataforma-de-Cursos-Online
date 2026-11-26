@@ -3,54 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login | SkillForge</title>
         <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
 
      <header>
 
-        <h1> SkillForge</h1>
+        <h1>SkillForge</h1>
         
-        <nav>   
-        <a href="index.html">Home</a> |
-        <a href="cursos.html">Cursos</a> |
-        <a href="sobre.html">Sobre</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="perfil.html">Perfil</a> |
-        <a href="fag.html">fag</a> |
+        <nav  class="menu">   
+         <a href="index.html">Home</a> 
+        <a href="cursos.html">Cursos</a> 
+        <a href="sobre.html">Sobre</a> 
+        <a href="contato.html">Contato</a> 
+        <a href="perfil.html">Perfil</a> 
+        <a href="fag.html">Fag</a> 
         <a href="login.html">Login</a>
+
         </nav>
         </header>
 
-    <hr>
+   
 
-    <main>
-        <h2>Login</h2>
+    <main class="pagina-login">
+        <section class="login-container">
+        <h2>Bem-vindo de volta!</h2>
 
-        <form >
+        <p>Acesse a sua conta e continue aprendendo.</p>
+
+        <form class="form-login">
+            
             <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="Digite Seu E-mail" required><br><br>
+            <input type="email" name="email" id="email" placeholder="Digite Seu E-mail" required>
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" placeholder="Digite Sua Senha" required><br><br>
-            <label >
-                 <input type="checkbox">
-                 Lembrar de Mim: <br><br>
+            <input type="password" name="senha" id="senha" placeholder="Digite Sua Senha" required>
+           
+           <div class="login-opcoes">
+            <label class="lembrar" >
+                 <input type="checkbox" name="lembrar" id="lembrar">
+                 Lembrar-me
             </label>
+
+              <a href="recuperar-senha.html">Esqueceu a senha</a>
+
+              </div>
            
 
-            <input type="submit" value="Entrar"><br><br>
+           <button type="submit" class="botao">
+            Entrar
+           </button>
         </form>
 
-        <article>
-            <a href="">Esqueceu a senha</a><br><br>
+        <p class="login-cadastro">
+            Ainda não possui uma conta?
 
-            <a href="">Ainda não possui uma conta?</a><br><br>
+             <a href="cadastro.html">Criar Conta</a>
 
-            <a href="">Criar Conta</a>
-        </article>
+        </p>
 
-        <hr>
+        </section>
+
+        
+          
+
 
         
     </main>

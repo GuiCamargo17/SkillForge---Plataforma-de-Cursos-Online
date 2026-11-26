@@ -3,79 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Perfil</title>
+    <title>Meu Perfil | SkillForge</title>
         <link rel="stylesheet" href="/CSS/style.css">
 </head>
 <body>
 
-     <header>
+    <header>
 
-        <h1> SkillForge</h1>
+        <h1>SkillForge</h1>
         
-        <nav>   
-      <a href="index.html">Home</a> |
-        <a href="cursos.html">Cursos</a> |
-        <a href="sobre.html">Sobre</a> |
-        <a href="contato.html">Contato</a> |
-        <a href="perfil.html">Perfil</a> |
-        <a href="fag.html">fag</a> |
+        <nav  class="menu">   
+         <a href="index.html">Home</a> 
+        <a href="cursos.html">Cursos</a> 
+        <a href="sobre.html">Sobre</a> 
+        <a href="contato.html">Contato</a> 
+        <a href="perfil.html">Perfil</a> 
+        <a href="fag.html">Fag</a> 
         <a href="login.html">Login</a>
-
 
         </nav>
         </header>
 
         <hr>
 
-        <main>
-            <section>
-            <h2>Meu Perfil</h2>
+        <main class="pagina-perfil">
+            <section class="perfil-destaque">
+                <div class="perfil-avatar">
+                    gc
+                </div>
 
-            <img src="/img/php.png" alt="foto de perfil" width="200" height="200">
-            
-            <p>Nome:Guilherme</p>
-            <p>E-mail:Guilhermepc@gmail.com</p>
-            <p>Data de Nascimento:17/12/2010</p>
+                <div class="perfil-apresentacao">
 
-            </section>
-            
-            <hr>
+                 <h2>Olá, Guilherme!</h2>
+                <p>Bem-vindo ao seu espaço de aprendizagem.</p>
+                <a href="cursos.html" class="botao-perfil">Explorar Cursos</a>
 
-            <h2>Meus Cursos</h2>
+                </div>
 
-            <section>
+                </section>
+
+                <section class="perfil-estatisticas">
+
+                    <article class="estatisticas">
+                        <h3>03</h3>
+                        <p>Cursos Matriculados</p>
+                    </article>
+                    
+                    <article class="estatisticas">
+                        <h3>01</h3>
+                        <p>Cursos Matriculados</p>
+                    </article>
+                    
+                    <article class="estatisticas">
+                        <h3>12h</h3>
+                        <p>Horas Estudadas</p>
+                    </article>
+
+
+                </section>
+
+                <section class="perfil-cursos">
+                    <h2>Meus Cursos</h2>
+                    <div class="perfil-curso-imagem imagem-html">
+                        Html5
+                    </div>
+
+                    <div class="perfil-curso-conteudo">
+                        <h3>Curso de Html5</h3>
+                         <p>Aprenda a estruturar páginas web utilizando HTML5.</p>
+                        
+                         
+                         <div class="progresso-info">
+                            <span>progresso</span>
+                            <span>75%</span>
+                         </div>
+
+                         <div class="barra-progresso">
+                            <div class="progresso html-progresso"></div>
+                         </div>
+
+                         <a href="curso.html" class="botao-perfil">Continuar Curso</a>
+
+                    </div>
+
+                </article>
+
+                <article class="perfil-card-curso">
+                    <div class="perfil-curso-imagem imagem-css">
+                        css3
+                    </div>
+
+                    <div class="perfil-curso-conteudo">
+                        <h3>Curso de Css</h3>
+                        <p>Aprenda a estilizar páginas e criar layouts modernos.</p>
+
+                        <div class="progresso-info">
+                            <span>Progresso</span>
+                            <span>35%</span>
+                        </div>
+
+                        <div class="barra-progresso">
+                            <div class="progresso css-progresso"></div>
+                        </div>
+
+                        <a href="cursos.html" class="botao-perfil">Continuar Curso</a>
+
+                    </div>
+                </article>
                 
-               <h3>HTML</h3>
-             
-               <p>Progresso:40%</p>
-             
-            </section>
+                <article class="perfil-card-curso">
+
+                    <div class="perfil-curso-imagem imagem-js">
+                        JavaScript
+                    </div>
+
+                    <div class="perfil-curso-conteudo">
+                        <h3>Curso de JavaScript</h3>
+                        <p>Aprenda programação e desenvolva funcionalidades interativas.</p>
+
+                        <div class="progresso-info">
+                            <span>Progresso</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="barra-progresso">
+                            <div class="progresso js-progresso"></div>
+                        </div>
+                        <a href="cursos.html" class="botao-perfil">Continuar Curso</a>
+                    </div>
+                </article>
+            </div>
+     </section>
+
+     <section class="perfil-certificados">
+
+        <h2>Meus Certificados</h2>
+
+        <article>
+            <div>
+                <h3>HTML- Fundamentos</h3>
+                <p>Curso concluído com sucesso!</p>
+            </div>
+
+            <span class="certificados-status">Concluído</span>
+        </article>
+
+    </section>
             
-            <section>
-                
-             <h3>CSS</h3>
-             <p>Progresso:20%</p>
-            </section>
-            
-            <section>
-                
-             <h3>JavaScript</h3>
-             <p>Progresso:0%</p>
-            </section>
-
-            <hr>
-
-            <section>
-                
-                <h2>Informações Da Conta</h2>
-
-                <p>Data de cadastro:16/08/2026</p>
-                <p>Tipo de Conta:Aluno</p>
-
-                <a href="">Editar Perfil</a>
-            </section>
-
-            <hr>
 
          </main>
 
